@@ -125,7 +125,7 @@ async function updateTable(){
 }
 
 async function getData(){
-    const response = await fetch('../scraper/passives.json');
+    const response = await fetch('/scraper/passives.json');
     const json = await response.json();
     return json;
 }
