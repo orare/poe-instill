@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POE Instilling Calculator</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>POE Distilled Emotions Calculator</h1>
+    </header>
+    <main>
+		<div class = "left">
+		<div class="emotion-selections">
+			<ol id="select-list">
+			</ol>
+		</div>
+
+		<div class="passive-showcase">
+			<p id="passive-name"> </p>
+			<p id="passive-tip"> </p>
+		</div>
+
+		<div class="emotion-selector">
+			<div class="tooltip">
+				<img class="emotion" src="img/1_distilled_ire.webp" alt="Distilled Ire" title="Distilled Ire">
+				<span class="tooltiptext">Distilled Ire</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/2_distilled_guilt.webp" alt="Distilled Guilt" title="Distilled Guilt">
+				<span class="tooltiptext">Distilled Guilt</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/3_distilled_greed.webp" alt="Distilled Greed" title="Distilled Greed">
+				<span class="tooltiptext">Distilled Greed</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/4_distilled_paranoia.webp" alt="Distilled Paranoia" title="Distilled Paranoia">
+				<span class="tooltiptext">Distilled Paranoia</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/5_distilled_envy.webp" alt="Distilled Envy" title="Distilled Envy">
+				<span class="tooltiptext">Distilled Envy</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/6_distilled_disgust.webp" alt="Distilled Disgust" title="Distilled Disgust">
+				<span class="tooltiptext">Distilled Disgust</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/7_distilled_despair.webp" alt="Distilled Despair" title="Distilled Despair">
+				<span class="tooltiptext">Distilled Despair</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/8_distilled_fear.webp" alt="Distilled Fear" title="Distilled Fear">
+				<span class="tooltiptext">Distilled Fear</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/9_distilled_suffering.webp" alt="Distilled Suffering" title="Distilled Suffering">
+				<span class="tooltiptext">Distilled Suffering</span>
+			</div>
+			<div class="tooltip">
+				<img class="emotion" src="img/10_distilled_isolation.webp" alt="Distilled Isolation" title="Distilled Isolation">
+				<span class="tooltiptext">Distilled Isolation</span>
+			</div>
+			<button id="clear-selection" type="button">Clear Selection</button>
+			
+
+		</div>
+	</div>
+
+	<div class="right">
+		<div class="search-box">
+			<input type="text" id="searchBox" placeholder="Search by name or mod...">
+		</div>
+		<div class="my-emotions" >
+			<label for="ire_quantity">Ire:</label>
+			<input class="emotion_quant" type="number" id="ire_quantity" name="ire_quantity" min="0" max="999" > 
+
+			<label for="guilt_quantity">Guilt:</label>
+			<input class="emotion_quant" type="number" id="guilt_quantity" name="guilt_quantity" min="0" max="999"> 
+			
+			<label for="greed_quantity">Greed:</label>
+			<input class="emotion_quant" type="number" id="greed_quantity" name="greed_quantity" min="0" max="999"> 
+			
+			<label for="paranoia_quantity">Paranoia:</label>
+			<input class="emotion_quant" type="number" id="paranoia_quantity" name="paranoia_quantity" min="0" max="999"> 
+			
+			<label for="envy_quantity">Envy:</label>
+			<input class="emotion_quant" type="number" id="envy_quantity" name="envy_quantity" min="0" max="999"> 
+
+			<label for="despair_quantity">Despair:</label>
+			<input class="emotion_quant" type="number" id="despair_quantity" name="despair_quantity" min="0" max="999"> 
+			
+			<label for="disgust_quantity">Disgust:</label>
+			<input class="emotion_quant" type="number" id="disgust_quantity" name="disgust_quantity" min="0" max="999"> 
+			
+			<label for="fear_quantity">Fear:</label>
+			<input class="emotion_quant" type="number" id="fear_quantity" name="fear_quantity" min="0" max="999"> 
+			
+			<label for="suffering_quantity">Suffering:</label>
+			<input class="emotion_quant" type="number" id="suffering_quantity" name="suffering_quantity" min="0" max="999"> 
+			
+			<label for="isolation_quantity">Isolation:</label>
+			<input class="emotion_quant" type="number" id="isolation_quantity" name="isolation_quantity" min="0" max="999"> 
+		</div>
+
+		<div class="passives-list">
+			<table id="passives-table">
+				<thead>
+					<tr>
+						<th id ="table-name"scope="col">Name</th>
+						<th id="table-description" scope="col">Description</th>
+						<th id="table-emotions" scope="col">Distilled Emotions</th>
+					</tr>
+				</thead>
+
+				<tbody>
+					
+				</tbody>
+			</table>
+		</div>
+	</div>
+    </main>
+
+</body>
+<script src="js/main.js" defer></script>
+</html>
