@@ -125,7 +125,7 @@ async function updateTable(){
 }
 
 async function getData(){
-    const response = await fetch('/scraper/passives.json');
+    const response = await fetch('https://raw.githubusercontent.com/orare/poe-instill/refs/heads/main/scraper/passives.json');//apparently you need to do this for static pages likes github pages?
     const json = await response.json();
     return json;
 }
