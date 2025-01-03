@@ -1,7 +1,6 @@
 /* entire body */
 body{
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
 }
 
 /* Main container split */
@@ -30,7 +29,6 @@ main {
 /* Passive showcase*/
 
 .passive-showcase{
-        
         text-align: center;
         height: 120px;
         width: 400px;
@@ -77,8 +75,6 @@ main {
         display: inline-block;
 }
 
-
-
 /* image tooltip */
 .tooltip {
         position: relative;
@@ -104,18 +100,23 @@ main {
 /* Emotion selection boxes*/
 .my-emotions{
         flex-wrap: wrap;
-        min-height: 30px;
         text-align: center;
-        line-height: 30px;
         border: 2px solid black;
+        padding: 8px 0;
+}
+
+.emotion_quant{
+        width: 40px;
+        margin-right: 12px;
 }
 
 
 /* Passive List & table */
 .passives-list{
         border: 2px solid black;
-        height: 332px;
-        overflow:scroll;      
+        height: auto;
+        max-height: calc(100vh - 240px);
+        overflow: scroll;      
 }
 
 th#table-name{
@@ -127,7 +128,6 @@ th#table-description{
 th#table-emotions{
         width: 310px;
 }
-
 
 tr,td{
         border: 1px solid black;
@@ -143,10 +143,10 @@ th{
 
 /* Search Box */
 #searchBox{
-        margin-top: 2px;
-        margin-bottom: 2px;
+        margin-bottom: 4px;
         border: 2px solid black;
         width: 300px;
+        padding: 4px;
 }
 
 /* Clear Button */
@@ -155,6 +155,7 @@ th{
         text-align: center;
         height: 52px;
         width: 400px;
+        cursor: pointer;
 }
 
 
